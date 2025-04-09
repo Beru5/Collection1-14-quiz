@@ -112,8 +112,8 @@ public class Collectionquiz {
                     tableModel.setValueAt(newName, selectedRow, 0);
                     tableModel.setValueAt(newPrice, selectedRow, 1);
 
-                    nameField.setText("");
-                    priceField.setText("");
+                    nameField.setText(product.getName());
+                    priceField.setText(String.valueOf(product.getPrice()));
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(frame, "Masukkan harga dalam angka!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
